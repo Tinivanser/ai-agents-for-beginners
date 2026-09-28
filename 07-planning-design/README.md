@@ -254,7 +254,7 @@ What follows is the output from the previous code and you can then use this stru
 }
 ```
 
-An example notebook with the previous code sample is available [here](07-autogen.ipynb).
+An example notebook with the previous code sample is available [here](./code_samples/07-autogen.ipynb).
 
 ### Iterative Planning
 
