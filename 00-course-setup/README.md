@@ -88,7 +88,7 @@ This will copy the example file and create a `.env` in your directory and where 
 
 With your token copied, open the `.env` file in your favorite text editor and paste your token into the `GITHUB_TOKEN` field.
 
-You should now be able to run the code samples of this course.
+You can now run the GitHub Models notebooks linked above. Other notebooks may require additional services and variables described in their opening cells.
 
 ## Set Up for Samples using Azure AI Foundry and Azure AI Agent Service
 
@@ -149,7 +149,7 @@ If you want to run these samples, you will need to add the following environment
 
 - `AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME` - Select your embedding model (e.g., `text-embedding-ada-002`) and note the **Deployment name** from the model details.
 
-- `AZURE_OPENAI_CHAT_DEPLOYMENT_NAME` - Select your chat model (e.g., `gpt-4o-mini`) and note the **Deployment name** from the model details.
+- `AZURE_OPENAI_CHAT_DEPLOYMENT_NAME` and `AZURE_OPENAI_DEPLOYMENT_NAME` - Select your chat model (e.g., `gpt-4o-mini`) and use its **Deployment name** for both variables.
 
 ### Azure Portal
 
