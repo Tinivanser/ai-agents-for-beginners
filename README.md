@@ -33,11 +33,11 @@ There is multi-language support for this course. Go to our [available languages 
 
 If this is your first time building with Generative AI models, check out our [Generative AI For Beginners](https://aka.ms/genai-beginners) course, which includes 21 lessons on building with GenAI.
 
-Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars?WT.mc_id=academic-105485-koreyst) and [fork this repo](https://github.com/microsoft/ai-agents-for-beginners/fork) to run the code.
+You can clone the repository to run the notebooks locally, or [fork it](https://github.com/microsoft/ai-agents-for-beginners/fork) to keep your own changes. Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars?WT.mc_id=academic-105485-koreyst) if you find it useful.
 
 ### What You Need 
 
-Each lesson in this course includes code examples, which can be found in the code_samples folder. You can [fork this repo](https://github.com/microsoft/ai-agents-for-beginners/fork) to create your own copy.  
+The runnable lessons have notebooks in their `code_samples` folders. To try your first example, follow [Course Setup](./00-course-setup/README.md), then open the [Lesson 1 notebook](./01-intro-to-ai-agents/code_samples/01-semantic-kernel.ipynb).
 
 The code example in these exercises, utilize Azure AI Foundry and GitHub Model Catalogs for interacting with Language Models:
 

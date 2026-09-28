@@ -101,6 +101,10 @@ Agentic Frameworks allow developers to implement agentic patterns through code. 
 
 In this course, we will explore the research-driven AutoGen framework and the production-ready Agent framework from Semantic Kernel.
 
+## Try the Code
+
+Run the [Semantic Kernel notebook](./code_samples/01-semantic-kernel.ipynb) with GitHub Models after completing [Course Setup](../00-course-setup/README.md).
+
 ## Previous Lesson
 
 [Course Setup](../00-course-setup/README.md)

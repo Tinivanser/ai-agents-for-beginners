@@ -6,11 +6,11 @@ This lesson will cover how to run the code samples of this course.
 
 ## Clone or Fork this Repo
 
-To begin, please clone or fork the GitHub Repository. This will make your own version of the course material so that you can run, test, and tweak the code!
+To begin, clone the repository to run and edit the notebooks locally. Forking is optional if you want to keep your changes on GitHub.
 
 This can be done by clicking the link to <a href="https://github.com/microsoft/ai-agents-for-beginners/fork" target="_blank">fork the repo</a>
 
-You should now have your own forked version of this course in the following link:
+If you fork the repository, you will see your copy on GitHub:
 
 ![Forked Repo](./images/forked-repo.png)
 
@@ -22,11 +22,11 @@ The code samples use either:
 
 **Requires GitHub Account - Free**:
 
-1) Semantic Kernel Agent Framework + GitHub Models Marketplace. Labelled as (semantic-kernel.ipynb)
-2) AutoGen Framework + GitHub Models Marketplace. Labeled as (autogen.ipynb)
+1) Semantic Kernel Agent Framework + GitHub Models Marketplace: [Lesson 1 notebook](../01-intro-to-ai-agents/code_samples/01-semantic-kernel.ipynb)
+2) AutoGen Framework + GitHub Models Marketplace: [Lesson 2 notebook](../02-explore-agentic-frameworks/code_samples/02-autogen.ipynb)
 
 **Requires Azure Subscription**:
-3) Azure AI Foundry + Azure AI Agent Service. Labelled as (azureaiagent.ipynb)
+3) Azure AI Foundry + Azure AI Agent Service: [Lesson 2 notebook](../02-explore-agentic-frameworks/code_samples/02-azureaiagent.ipynb)
 
 We encourage you to try out all three types of examples to see which one works best for you.
 
@@ -36,23 +36,22 @@ Whichever option you choose, it will determine which setup steps you need to fol
 
 - Python 3.12+
   - **NOTE**: If you don't have Python3.12 installed, ensure you install it.  Then create your venv using python3.12 to ensure the correct versions are installed from the requirements.txt file.
-- A GitHub Account - For Access to the GitHub Models Marketplace
-- Azure Subscription - For Access to Azure AI Foundry
-- Azure AI Foundry Account - For Access to the Azure AI Agent Service
+- A GitHub account for GitHub Models samples **or** an Azure subscription and AI Foundry project for Azure AI Agent Service samples
 
 We have included a `requirements.txt` file in the root of this repository that contains all the required Python packages to run the code samples.
 
-You can install them by running the following command in your terminal at the root of the repository:
+From the repository root, create a virtual environment and install the packages:
 
 ```bash
-pip install -r requirements.txt
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
-We recommend creating a Python virtual environment to avoid any conflicts and issues.
+On Windows Command Prompt, activate with `.venv\Scripts\activate.bat` instead. Keep the repository root as the working directory so the notebooks can load the root `.env` file.
 
-## Setup VSCode
-Make sure that you are using the right version of Python in VSCode.
+## Set Up VS Code
 
-![image](https://github.com/user-attachments/assets/a85e776c-2edb-4331-ae5b-6bfdfb98ee0e)
+Select the `.venv` interpreter as your notebook kernel in VS Code before running cells in the notebook linked above.
 
 ## Set Up for Samples using GitHub Models 
 
@@ -74,7 +73,7 @@ You will be prompted to enter a name for your token, select the expiration date 
 
 It's also necessary to edit the permissions of this token: Permissions -> Models -> Allows access to GitHub Models
 
-Copy your new token that you have just created. You will now add this to your `.env` file included in this course. 
+Copy your new token; you will add it to the `.env` file created in the next step.
 
 
 ### Step 2: Create Your `.env` File
@@ -89,7 +88,7 @@ This will copy the example file and create a `.env` in your directory and where 
 
 With your token copied, open the `.env` file in your favorite text editor and paste your token into the `GITHUB_TOKEN` field.
 
-You should now be able to run the code samples of this course.
+You can now run the GitHub Models notebooks linked above. Other notebooks may require additional services and variables described in their opening cells.
 
 ## Set Up for Samples using Azure AI Foundry and Azure AI Agent Service
 
@@ -99,7 +98,7 @@ You should now be able to run the code samples of this course.
 Follow the steps to creating a hub and project in Azure AI Foundry found here: [Hub resources overview](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/ai-resources)
 
 
-Once you have created your project, you will need to retrieve the connection string for your project.
+Once you have created your project, you will need to retrieve its project endpoint.
 
 This can be done by going to the **Overview** page of your project in the Azure AI Foundry portal.
 
@@ -115,7 +114,7 @@ cp .env.example .env
 
 This will copy the example file and create a `.env` in your directory and where you fill in the values for the environment variables.
 
-With your token copied, open the `.env` file in your favorite text editor and paste your token into the `PROJECT_ENDPOINT` field.
+Copy the project endpoint, then open the `.env` file in your favorite text editor and paste it into the `PROJECT_ENDPOINT` field.
 
 ### Step 3: Sign in to Azure
 
@@ -150,7 +149,7 @@ If you want to run these samples, you will need to add the following environment
 
 - `AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME` - Select your embedding model (e.g., `text-embedding-ada-002`) and note the **Deployment name** from the model details.
 
-- `AZURE_OPENAI_CHAT_DEPLOYMENT_NAME` - Select your chat model (e.g., `gpt-4o-mini`) and note the **Deployment name** from the model details.
+- `AZURE_OPENAI_CHAT_DEPLOYMENT_NAME` and `AZURE_OPENAI_DEPLOYMENT_NAME` - Select your chat model (e.g., `gpt-4o-mini`) and use its **Deployment name** for both variables.
 
 ### Azure Portal
 
